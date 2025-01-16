@@ -1,0 +1,87 @@
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.popupHeader h2 {
+  margin: 0;
+  color: #4caf50;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popupBody .formGroup {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.popupBody label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.popupBody input,
+.popupBody textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popupBody textarea {
+  resize: none;
+  height: 60px;
+}
+
+.popupFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.okBtn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.ok-btn:hover {
+  background: #45a049;
+}
+
+.popupText {
+  text-align: left;
+}
